@@ -52,7 +52,7 @@ namespace WriterFlow.Controllers
 
             var model = PromptCatalog[rnd.Next(0, 4)];
 
-            //makes promp object avaiable to view file - ShowPrompt.cshtml
+            //makes avaiable to view file - ShowPrompt.cshtml
             return Json(model, JsonRequestBehavior.AllowGet);
         }
 
