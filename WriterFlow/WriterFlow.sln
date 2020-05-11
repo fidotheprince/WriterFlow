@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriterFlow", "WriterFlow\WriterFlow.csproj", "{EC3D8714-7E77-4017-8BFC-4B4C1BC1C49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriterFlow.Tests", "WriterFlow.Tests\WriterFlow.Tests.csproj", "{5A39CAAE-53E0-49A5-80E2-AAE79667066C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC3D8714-7E77-4017-8BFC-4B4C1BC1C49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3D8714-7E77-4017-8BFC-4B4C1BC1C49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3D8714-7E77-4017-8BFC-4B4C1BC1C49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3D8714-7E77-4017-8BFC-4B4C1BC1C49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A39CAAE-53E0-49A5-80E2-AAE79667066C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A39CAAE-53E0-49A5-80E2-AAE79667066C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A39CAAE-53E0-49A5-80E2-AAE79667066C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A39CAAE-53E0-49A5-80E2-AAE79667066C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
