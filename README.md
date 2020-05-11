@@ -1,5 +1,5 @@
 # WriterFlow
-A application designed to help clear writers block
+An application designed to help clear writers block
 
 Currently, the application is being build in Visual Studios for Mac. 
 
