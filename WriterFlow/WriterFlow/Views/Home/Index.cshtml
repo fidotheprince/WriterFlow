@@ -18,6 +18,12 @@
                 @Html.Partial("ShowPrompt")
             </div>
             <!--button-->
+            <!--set up ajax so url doesn't redirect to partial view
+                & you can dynamically see the change on home page
+
+                In other words, I want to shoot an object from the ShowPrompt controller
+                to the partial view without having to redirect the url
+                -->
             <p class="lead">
                 <a href="Home/ShowPrompt" class="btn btn-lg btn-primary">Create</a>
             </p>
