@@ -7,15 +7,24 @@
 
 </table>
 
-<script src="~/Scripts/jquery-3.5.1.min.js"></script>
-<script type ="text/javacript">
+<script src="~/Scripts/umd/jquery-3.5.1.min.js"></script>
+<script type ="text/javascript">
 
     $(document).ready(function() {
-       <!--Retrives and dynamically creates prompt in html-->
+        /*Retrives and dynamically creates prompt in html */
         GetPrompt();
     });
 
+ 
+    function GetPrompt() {
+
+        /*url to controller & action in question*/
+        $.get('/Home/ShowPrompt', [], function (data) {
+
+        }); /*.get()*/
+    }; /*GetPrompt()*/
+
 </script>
 
-
+ 
 
