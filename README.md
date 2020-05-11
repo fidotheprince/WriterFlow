@@ -1,11 +1,18 @@
 # WriterFlow
-An application designed to help clear writers block
+WritersFlow is a tool to help clear your writers block.
 
-Currently, the application is being build in Visual Studios for Mac. 
+The app is currentlty being build on Visual Studios Mac. Accordingly, I am creating all changes to the application in a .sl file. The specific updates are being rendered within the WriterFlow folder. 
 
-As it stands, there are more files to be added when it comes to deploying the actual application.
+Moreover, the main files to look at to understand the functionality of the application will be the following. 
 
-However, in regards to understanding the functionality of the app,these files are the most important. 
+HomeController.cs (C#)
+
+All .cshtml files (Razor, JS, jQuery) 
+
+Model, .cs file
+
+As of right now, the model represents a string, writing prompt(s), that a user can apply to solve their writer's block. 
+ 
 
 Best, 
 
