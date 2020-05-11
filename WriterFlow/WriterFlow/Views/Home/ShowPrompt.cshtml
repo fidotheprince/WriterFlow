@@ -19,8 +19,22 @@
     function GetPrompt() {
 
         /*url to controller & action in question*/
-        $.get('/Home/ShowPrompt', [], function (data) {
+        $.get('/Home/ShowPrompt', {}, function (data) {
 
+            var Prompts = $("#promptHeading");
+
+            $.each(data, function (index, item) {
+
+                var tr = $("<tr></tr>");
+
+                tr.html(
+
+                    ("<td>" + item.Prompt + "</td>")
+                );
+
+            Prompts.append(tr);
+
+            })/*.each()*/
         }); /*.get()*/
     }; /*GetPrompt()*/
 
