@@ -47,12 +47,12 @@ namespace WriterFlow.Controllers
 
             Random rnd = new Random();
 
-            //tie random method to array - returns random number
+            //tie random method to array - returns random number (prompt object)
             //min - index - max index 
 
             var model = PromptCatalog[rnd.Next(0, 4)];
 
-            //makes array data avaiable to view file - ShowPrompt.cshtml
+            //makes promp object avaiable to view file - ShowPrompt.cshtml
             return Json(model, JsonRequestBehavior.AllowGet);
         }
 

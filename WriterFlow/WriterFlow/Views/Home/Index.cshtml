@@ -1,4 +1,4 @@
-﻿@model WriterFlow.Models.WriterPrompt
+﻿
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,6 +13,10 @@
                 WritersFlow is a tool to clear your writers block.
                 Click below, recieve a prompt, and let your creative juices flow.
             </p>
+            <!--Partial View here hide tags above with jQuery-->
+            <div>
+                @Html.Partial("ShowPrompt")
+            </div>
             <!--button-->
             <p class="lead">
                 <a href="Home/ShowPrompt" class="btn btn-lg btn-primary">Create</a>
