@@ -16,6 +16,7 @@
             <!--Partial View here hide tags above with jQuery-->
             <div>
                 @Html.Partial("ShowPrompt")
+                <div id="test"></div>
             </div>
             <!--button-->
             <!--set up ajax so url doesn't redirect to partial view
@@ -23,13 +24,33 @@
 
                 In other words, I want to shoot an object from the ShowPrompt controller
                 to the partial view without having to redirect the url
+
+                on click point to url with ajax 
                 -->
             <p class="lead">
-                <a href="Home/ShowPrompt" class="btn btn-lg btn-primary">Create</a>
+                <a href="#" class="btn btn-lg btn-primary" onclick="NewPrompt">Create</a>
             </p>
         </main>
     </div>
 </body>
+
+<script src="~/Scripts/umd/jquery-3.5.1.min.js"></script>
+<script type ="text/javascript">
+    function NewPrompt() {
+
+        $.ajax({
+            type: "POST",
+            url: "Home/ShowPrompt",
+            success: function () {
+                $("#test").append("<div> will show if ajax is succesful</div>");
+            }
+        })
+      
+
+
+    };
+</script>
+
 
 <style>
     #form {

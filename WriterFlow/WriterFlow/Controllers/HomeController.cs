@@ -22,7 +22,7 @@ namespace WriterFlow.Controllers
             [HttpGet]
         public JsonResult ShowPrompt()
         {
-            /*var prompt1 = new WriterPrompt();
+            var prompt1 = new WriterPrompt();
             prompt1.Prompt = "prompt1";
             var prompt2 = new WriterPrompt();
             prompt2.Prompt = "prompt2";
@@ -50,14 +50,9 @@ namespace WriterFlow.Controllers
             //tie random method to array - returns random number (prompt object)
             //min - index - max index 
 
-            var model = PromptCatalog[rnd.Next(0, 4)];*/
+            var model = PromptCatalog[rnd.Next(0, 4)];
 
             //makes avaiable to view file - ShowPrompt.cshtml
-
-            var testprompt = new WriterPrompt();
-            testprompt.Prompt = "test prompt";
-
-            var model = testprompt;
 
             return Json(model, JsonRequestBehavior.AllowGet);
         }
